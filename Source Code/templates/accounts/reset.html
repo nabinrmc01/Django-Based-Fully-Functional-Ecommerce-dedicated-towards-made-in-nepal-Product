@@ -1,0 +1,10 @@
+<!-- rendering html protection against crossite scriptiing-->
+{% autoescape off %} 
+
+Hi {{user.first_name}},
+Click on below link to reset your password.
+http://{{domain}}{% url 'reset_validate' uidb64=uid token=token %}
+
+Nabin Rayamajhi
+
+{% endautoescape %} 

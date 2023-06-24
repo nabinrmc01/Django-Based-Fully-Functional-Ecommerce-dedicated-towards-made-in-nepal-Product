@@ -1,0 +1,8 @@
+<!-- rendering html protection against crossite scriptiing-->
+{% autoescape off %} 
+Hi, {{user.first_name}},
+Your order has been recieved
+Order Number: :{{order.order_number}}
+
+{% endautoescape %} 
+ 
